@@ -34,6 +34,29 @@ const handleUserInput = function (key ){
     connection.write("Move: right")
   }
 
+  if(key === 'x'){
+    connection.write("Say: SUP?")
+  }
+
+  if(key === 'c'){
+    connection.write("Say: I WIN")
+  }
+
+  if(key === 'v'){
+    connection.write("Say: :)")
+  }
+
+  if(key === 'b'){
+    connection.write("Say: :(")
+  }
+
+  if(key === 'b'){
+    connection.write("Say: HOWDY!")
+  }
+  
+
+  
+
   if(key === '\u0003') {
     process.exit();
   }
