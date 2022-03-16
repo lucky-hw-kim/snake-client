@@ -24,31 +24,17 @@ const connect = function () {
     // setTimeout(()=> {
     //   conn.write("Move: left")
     // },900)
-
-    // setTimeout(()=> {
-    //   conn.write("Move: down")
-    // },1000)
-
-    // setTimeout(()=> {
-    //   conn.write("Move: right")
-    // },1200)
-
-    // setInterval(() => {
-    //   conn.write("Move: down")
-    //   conn.write("Move: right")
-    // },300)
     
     conn.write("Name: LUK")
   })
 
-
+  
   // interpet incoming data as text
   conn.setEncoding('utf-8');
 
   return conn;
+
 };
 
 console.log("Connecting...");
-connect();
-
 module.exports = {connect};
